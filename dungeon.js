@@ -1,4 +1,4 @@
-var cellSize = 25;
+var cellSize;
 var height;
 var width;
 var dungeon;
@@ -17,6 +17,7 @@ window.onload = function() {
         width = parseInt(document.getElementById("width").value);
         height = parseInt(document.getElementById("height").value);
 
+        cellSize = parseInt(document.getElementById("cellSize").value);
         var canvasWidth = width * cellSize;
         var canvasHeight = height * cellSize;
         canvas.width = canvasWidth;
